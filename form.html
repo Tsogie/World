@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+	
+	<head>
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Home page</title>
+		<link rel="stylesheet" href="styles.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+
+		<nav> 
+			<div>
+				<a href = "index.html"><img class = "logo" src = "logo.png" alt = "logo"></a>
+			</div>
+			<div>
+				<ul> 
+					<li><a href = "index.html"> Home </a></li>
+					<li><a href = "available.html"> Available </a></li>
+					<li><a href = "form.html"> Form </a></li>
+				</ul>
+			</div>
+		</nav>
+		<main>
+
+		<h1 class = "available-title">Pet adoption form </h1>
+
+		<div class = "form-border">	<!--with this class, made this table in center by using grid, gave command center-->
+				<form>
+					<label> First name (min 3 characters):* </label> <!--used labels throughout form-->
+						<input type = "text" 
+								name = "FirstName" 
+								placeholder = "First Name" 
+								size = "50" 
+								minlength = "3" 
+								maxlength = "20" required>
+					<br>
+					<label> Last name (max 3 characters):* </label>
+						<input type = "text" 
+								name = "LastName" 
+								placeholder = "Last Name"  
+								size = "50" 
+								minlength = "3" 
+								maxlength = "20" required>
+					<br>
+					<label> Phone number:* </label>
+						<input type = "tel" 
+								name = "PhoneN" 
+								placeholder = "(89)222-1212" 
+								size = "50" required> 
+					<br>
+					<label> E-Mail:* </label> <br>
+						<input type = "email" 
+								name = "email" 
+								placeholder = "E-Mail Address" 
+								size = "50" required>
+					<br>
+					 
+						<label> How would you like us to contact you? </label>
+						<label for = "phone"> Phone </label>
+						<input type = "radio" name = "ContactOptions" value = "phone"> 
+					
+						<label>	E-Mail	</label>
+						<input type = "radio" name = "ContactOptions" value = "email">
+					
+					<br>
+
+					<label> Your desired pet </label> 
+						<select name = "DesiredPet">
+							<option value = "cat"> Cat </option>
+							<option value = "dog"> Dog </option>
+							<option value = "parrot"> Parrot </option>
+							<option value = "guinea"> Guinea </option>
+						</select>
+					<br>
+					<label> Comments: </label>
+						<table class="table-form">
+								<tr>						
+									<td>
+										<textarea rows = "5" cols = "50"> </textarea>
+									</td>	
+								</tr>												
+						</table>
+					
+					<br>
+						<input type="checkbox" name="AgreeTerms" value="Terms">
+						<label> I agree to your T&C </label>
+					
+					<br>
+						<input type="checkbox" name="AgreeNewsletter" value="Newsletter">
+						<label> I want to subscribe to your monthly newsletter </label>
+						
+					<br>
+					<input type = "submit" value = "SUBMIT" class = "submit-btn">
+				</form>	
+		</div>
+
+		
+		</main>
+		
+		
+		<footer>
+      Copyright &copy; 2025 Tsogzolmaa. All Rights Reserved.
+		</footer>
+
+	</body>
+</html>

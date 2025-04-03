@@ -1,0 +1,429 @@
+﻿
+/* FONTS THAT USED
+400-900
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+200-900
+.inconsolata-<uniquifier> {
+  font-family: "Inconsolata", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+100-900
+.roboto-<uniquifier> {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}*/	
+
+
+
+*{			
+	font-family: "Roboto", serif;
+	font-size: 19px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-color: white;	
+}/* *GENERAL COMMAND TO ALL PAGES*/ 
+
+
+		nav{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 90px;
+			top:0;
+		}
+	
+		.logo{
+			width: 40px;
+			cursor: pointer;
+			margin-left:30px;
+		}	
+		ul{
+			list-style:none; 
+		}
+
+		ul li {
+			display: inline-block;
+			padding: 0px 30px;
+		
+			
+		} 
+		ul li a {
+			color: black;
+			font-weight:600;
+			font-size:24px;
+			text-decoration:none;
+			transition: all 0.3s ease 0s;
+		}
+		ul li a:hover {
+			color:rgba(0, 0, 0, 0.5);
+		}
+
+		.section-1{	
+			position: relative; /*made it relative to put absolute texts in it*/
+		}
+	
+		.source1{
+		position:absolute;
+		font-size:15px;
+		color: rgba(0, 0, 0, 0.4);
+		bottom: 10px;
+		right: 10px;
+		background-color: transparent;
+		}
+
+		.intro-image{
+		width:100%;
+		height:auto;
+		opacity: 0.9;		
+		}
+
+		.intro-text{
+		width: 60%;
+		position:absolute;
+		top: 12%;
+		left: 4%;
+		padding:1%;
+		}
+
+		.intro-text{
+		background-color: transparent; /*THOSE ALL TRANSPARENT VALUES DOWN IN THE CODE ARE FOR PURPOSE REMOVE WHITE BACKGROUND FIRST AND GIVE DIFFERENT COLOR TO IT.*/
+		background-color: rgba(148, 141, 132, 0.05);
+		}
+
+		.intro-text h2{
+		font-size: 50px;
+		font-weight: 500;
+		background-color: transparent;
+		}
+
+		.intro-text p{
+		font-size: 25px;
+		font-weight: 300;
+		background-color: transparent;
+		color: rgba(25, 23, 25, 0.76);
+		}
+
+		.section-2{
+			display:grid; /*HERE USED GRID TO DISPLAY PARALLEL AND ALSO LATER TO USE IT IN RESPONSIVENESS.*/
+			grid-template-columns: 1fr 1fr;
+			justify-items: center;
+			align-items: center;
+			padding: 70px
+		}
+
+		.section-2-image{
+			width:300px;
+			margin: 0;	
+		}
+		
+		.section-2-text{
+			width: 70%; /*HERE JUST TO REDUCE THE SIZE OF TEXT AREA TO MATCH THE IMAGE BESIDE*/
+		}
+		.section-2-text h2{
+			padding-bottom:25px;
+			text-align: center;
+		}
+		.what-title, .get-title, .section-2-text h2{ 
+			font-size:24px;
+		}
+/*STARTING HERE PART OF HOMEPAGE ABOUT ""WHAT WE DO""*/
+		.what-title{
+		text-align: center;
+		background-color: rgba(148, 141, 132, 0.05);
+		padding-top:40px ;
+		padding-bottom:20px;
+		}
+
+		svg{
+		width:50px;
+		border: 2px solid black;
+		background-color: transparent;
+		}
+
+		.section-3{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		padding: 20px;
+		justify-items:center;
+		background-color: rgba(148, 141, 132, 0.05);
+		}
+		.icon-with-text{
+		justify-items:center;
+		}
+		.icon-with-text{
+		background-color: transparent;
+		}
+		.section-3-text{
+		font-family: "Inconsolata", serif;
+		font-size: 20px;
+		color: rgba(0, 0, 0, 0.75);
+		background-color: transparent;
+		}
+
+/* STARTING HERE SECTION-5 IS TABLE IN HOME PAGE */
+		
+
+
+		.section-4{
+			display:flex; /*here flex just to make table in center.*/
+			justify-content:center;
+			align-items: center;
+			padding-top:60px;
+			padding-bottom:100px;
+
+		} 
+
+		.get-title{
+			text-align: center;
+			padding-top:45px ;
+		}
+		
+		.section-4 table thead tr th{ /*here for padding because there is other table in other page*/
+			padding:4px 25px;
+		}
+		.section-4 table tbody tr td{
+			padding:4px 25px;
+		}
+		.section-4 td{
+			background-color: transparent;
+		}
+		.row-color{
+			background-color: transparent;
+			background-color: rgba(146, 128, 105, 0.08);
+		}
+
+		footer{
+		background-color: rgba(0, 0, 0, 0.4);
+		padding:50px;
+		text-align:center;
+		}
+/*STARTING HERE SECOND PAGE- AVAILABLE PETS*/
+
+		.available-title{
+			background-color: rgba(146, 128, 105, 0.08);
+			text-align: center;
+			padding-top:45px;
+			font-size:28px;
+			color:rgba(6, 0, 0, 0.73);
+		}
+		.gallery{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			justify-items: center;
+			padding:65px;
+			padding-bottom:100px;
+			background-color: rgba(146, 128, 105, 0.08);
+		}
+
+		.gallery-image1,.gallery-image2, .gallery-image3, .gallery-image4{
+			width: 200px;
+			height: auto;
+			cursor: pointer;
+		}
+		.gallery-image-text{
+			justify-items: center;
+			background-color: transparent; /*So all transparents are to remove white background.  */
+		}
+		.gallery-text{
+			font-family: "Playfair Display", serif;
+			font-size:17px;
+			background-color: transparent;
+		}
+		.gallery-image1{
+		transition: transform 0.3s ease, opacity 0.3s ease;
+		}
+		.hover:hover .gallery-image1{
+		transform: scale(1.03);
+		opacity: 0.85;
+		}
+		.gallery-image2{
+		transition: transform 0.3s ease, opacity 0.3s ease;
+		}
+		.hover:hover .gallery-image2{
+		transform: scale(1.03);
+		opacity: 0.85;
+		}
+		.gallery-image3{
+		transition: transform 0.3s ease, opacity 0.3s ease;
+		}
+		.hover:hover .gallery-image3{
+		transform: scale(1.03);
+		opacity: 0.85;
+		}
+		.gallery-image4{
+		transition: transform 0.3s ease, opacity 0.3s ease;
+		}
+		.hover:hover .gallery-image4{
+		transform: scale(1.03);
+		opacity: 0.85;
+		}
+
+
+
+
+/*STARTING HERE FORM PAGE*/
+
+		.form-border{
+			justify-items: center;
+			padding-top:60px;
+			padding-bottom:100px;
+			background-color: rgba(146, 128, 105, 0.08);
+		}
+
+		form{	
+			border: 2px;
+			width: 500px;
+			height: auto;
+			font-size: 17px;	
+		}
+		.submit-btn{
+			background-color:rgba(0, 0, 0, 0.4);
+			color:white;
+			font-weight: 900;
+			width: 100%;
+			border:none;
+			padding: 10px;
+			cursor: pointer;
+		}
+		.table-form, form, label{
+			background-color: transparent;
+			
+		}
+		td{
+			background-color: transparent;
+			background-color: rgba(146, 128, 105, 0.08);
+		}
+
+		.on-corner-text{ /*to show image source in page*/
+		position: relative;
+		}
+		.source{
+		font-size:15px;
+		color: gray;
+		position:absolute;
+		bottom:10px;
+		right:10px;
+		background-color: transparent;
+		}
+	
+
+		
+/*STARTING HERE RESPONSIVENESS*/		
+
+@media(max-width: 1073px){
+
+*{
+		font-size: 18px;	
+	}
+
+.intro-image{
+		width: 105%;
+		height:auto;
+		} 
+.section-3{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 10px;
+		gap:40px;
+		
+		}
+.gallery{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+		padding:40px;
+		padding-bottom:80px;	
+		}
+
+.intro-text h2{
+		font-size: 44px;
+		}
+
+.intro-text p{
+		font-size: 20px;
+		}
+
+} /*media closing bracket*/
+@media(max-width: 950px){
+
+*{
+	font-size: 17px;	
+	}
+.intro-text{
+		width: 70%;
+		}
+.intro-image{
+	width: 110%;
+	height:auto;	
+	}
+
+} /*media closing bracket*/
+
+@media(max-width: 824px){
+*{
+	font-size: 16px;	
+	}
+.intro-image{
+	width:115%;
+	height:auto;
+}
+.section-3{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 10px;
+		
+		}
+.gallery{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding:30px;
+		padding-bottom:70px;
+		}
+
+.intro-text{
+		width: 80%;
+		}
+.intro-text h2{
+		font-size: 40px;
+		}
+
+.section-2{
+		display:grid;
+		grid-template-columns: 1fr;
+		}
+} /*media closing bracket*/
+
+@media(max-width: 680px){
+*{
+	font-size: 16px;	
+	}
+
+.intro-text{
+		width: 90%;
+		}
+.intro-image{
+	
+}
+
+.gallery{
+		display: grid;
+		grid-template-columns: 1fr;
+		}
+
+
+
+}
